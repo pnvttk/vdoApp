@@ -19,3 +19,7 @@ Err : Property 'videos' does not exist on type 'VideoListComponent'.
     in video list .component.ts export class VideoListComponent implements OnInit {  
     --> add 
     videos: any;
+
+**P18**
+
+Err : HAVE MANY SYNTAX ERROR PLEASE C H E C K CAREFULLY

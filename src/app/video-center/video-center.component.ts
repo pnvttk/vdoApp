@@ -14,10 +14,17 @@ export class VideoCenterComponent implements OnInit {
     {"_id": "3", "title": "Title 3", "url": "url3", "description": "desc 3"},
     {"_id": "4", "title": "Title 4", "url": "url4", "description": "desc 4"},
   ]
+
+  selectedVideo!: Video;
   
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelectedVideo(video: any) {
+    this.selectedVideo = video;
+    console.log(this.selectedVideo)
   }
 
 }
