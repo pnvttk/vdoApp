@@ -12,3 +12,10 @@ Err : localhost:3000 blank screen
     If after running the server you saw a blank screen; move <base href="/"> to <base href="/ngApp/"> 
     in index.html file and rebuild -  ng build    .then run the- node server    again.
 
+**P17**
+
+Err : Property 'videos' does not exist on type 'VideoListComponent'.
+    --> fix
+    in video list .component.ts export class VideoListComponent implements OnInit {  
+    --> add 
+    videos: any;
