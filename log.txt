@@ -1,0 +1,14 @@
+**P15**
+
+Err : ENOENT: no such file or directory, lstat '/Users/Desktop/node_modules'
+    --> change angular.json
+    ../node_modules/bootstrap/dist/css/bootstrap.css
+    "styles": ["./node_moodules/font-awesome/css/font-awesome.css"]
+    --> to
+    node_modules/bootstrap/dist/css/bootstrap.css
+    "styles": ["./node_modules/font-awesome/css/font-awesome.css"]
+
+Err : localhost:3000 blank screen
+    If after running the server you saw a blank screen; move <base href="/"> to <base href="/ngApp/"> 
+    in index.html file and rebuild -  ng build    .then run the- node server    again.
+
