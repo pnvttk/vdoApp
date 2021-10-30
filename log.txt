@@ -23,3 +23,32 @@ Err : Property 'videos' does not exist on type 'VideoListComponent'.
 **P18**
 
 Err : HAVE MANY SYNTAX ERROR PLEASE C H E C K CAREFULLY
+    --> fix
+    videos: any; Property
+    --> read error log
+
+**P19**
+
+Err : Can't bind to 'ngModel' since it isn't a known property of 'textarea'.
+    --> fix 
+    Make sure to include FormsModule in app.module.ts and add to the imports array like so:
+
+    import { FormsModule } from '@angular/forms';
+
+    [...]
+
+    @NgModule({
+    imports: [
+        [...]
+        FormsModule
+    ],
+    [...]
+    })
+
+    for those that are getting can't bind to ngModel error in console
+
+Err : Property 'editTitle' is private and only accessible within class 'VideoDetailComponent'.
+    --fix
+    change private to public
+    public editTitle
+
